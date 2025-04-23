@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js mini-project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="outer-layer">
+
+        <div class="inner-layer">
+
+            <div class="prod-photos">
+                <img src="prod-img/tennisBall.jpg" alt="item-img" class="prod-image">
+            </div>
+
+            <div class="prod-info">
+
+                <p class="prod-name">Tennis Ball</p>
+                <p class="prod-mrp">
+                    <span class="rupee">&#8377;</span>
+                    <span class="amount">99</span>
+                </p>
+
+
+                <p id="deliv-date">FREE delivery 25 Apr on first order or fastest delivery <b>Tomorrow, 23 Apr</b>
+                </p>
+
+                <div class="buttons">
+                    <button class="cart-button" onclick="
+                        countQuantity()
+                        ">Add to cart</button>
+
+                    <button class="del-button" onclick="
+                    resetQuantity()
+                    ">Delete</button>
+                   
+                </div>
+
+            </div>
+        </div>
+
+       
+
+        <!-- two  -->
+
+        <div class="inner-layer">
+
+            <div class="prod-photos">
+                <img src="prod-img/Football.jpg" alt="item-img" class="prod-image">
+            </div>
+
+            <div class="prod-info">
+
+                <p class="prod-name">Football</p>
+                <p class="prod-mrp">
+                    <span class="rupee">&#8377;</span>
+                    <span class="amount">699</span>
+                </p>
+
+
+                <p id="deliv-date">FREE delivery 28 Apr on first order or fastest delivery <b>Tomorrow, 24 Apr</b>
+                </p>
+
+                <div class="buttons">
+                    <button class="cart-button" onclick="
+                        countQuantity()
+                        ">Add to cart</button>
+
+                    <button class="del-button" onclick="
+                    resetQuantity()
+                    ">Delete</button>
+                   
+                </div>
+
+            </div>
+        </div>
+
+        <!-- three  -->
+
+        <div class="inner-layer">
+
+            <div class="prod-photos">
+                <img src="prod-img/niviaball.jpg" alt="item-img" class="prod-image">
+            </div>
+
+            <div class="prod-info">
+
+                <p class="prod-name">Niviaball</p>
+                <p class="prod-mrp">
+                    <span class="rupee">&#8377;</span>
+                    <span class="amount">899</span>
+                </p>
+
+
+                <p id="deliv-date">FREE delivery 28 Apr on first order or fastest delivery <b>Tomorrow, 24 Apr</b>
+                </p>
+
+                <div class="buttons">
+                    <button class="cart-button" onclick="
+                        countQuantity()
+                        ">Add to cart</button>
+
+                    <button class="del-button" onclick="
+                    resetQuantity()
+                    ">Delete</button>
+                   
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- four -->
+
+        <div class="inner-layer">
+
+            <div class="prod-photos">
+                <img src="prod-img/sgball.jpg" alt="item-img" class="prod-image">
+            </div>
+
+            <div class="prod-info">
+
+                <p class="prod-name">Sg Ball</p>
+                <p class="prod-mrp">
+                    <span class="rupee">&#8377;</span>
+                    <span class="amount">2999</span>
+                </p>
+
+
+                <p id="deliv-date">FREE delivery 26 Apr on first order or fastest delivery <b>Tomorrow, 24 Apr</b>
+                </p>
+
+                <div class="buttons">
+                    <button class="cart-button" onclick="
+                        countQuantity()
+                        ">Add to cart</button>
+
+                    <button class="del-button" onclick="
+                    resetQuantity()
+                    ">Delete</button>
+                   
+                </div>
+
+            </div>
+        </div>
+
+        <!-- five  -->
+
+        <div class="inner-layer">
+
+            <div class="prod-photos">
+                <img src="prod-img/spunge ball.jpg" alt="item-img" class="prod-image">
+            </div>
+
+            <div class="prod-info">
+
+                <p class="prod-name">smiley Ball</p>
+                <p class="prod-mrp">
+                    <span class="rupee">&#8377;</span>
+                    <span class="amount">89</span>
+                </p>
+
+
+                <p id="deliv-date">FREE delivery 27 Apr on first order or fastest delivery <b>Tomorrow, 24 Apr</b>
+                </p>
+
+                <div class="buttons">
+                    <button class="cart-button" onclick="
+                        countQuantity()
+                        ">Add to cart</button>
+
+                    <button class="del-button" onclick="
+                    resetQuantity()
+                    ">Delete</button>
+                   
+                </div>
+
+            </div>
+        </div>
+
+        <!-- six  -->
+
+        <div class="inner-layer">
+
+            <div class="prod-photos">
+                <img src="prod-img/sessonBall.jpg" alt="item-img" class="prod-image">
+            </div>
+
+            <div class="prod-info">
+
+                <p class="prod-name">Red sessonBall </p>
+                <p class="prod-mrp">
+                    <span class="rupee">&#8377;</span>
+                    <span class="amount">2999</span>
+                </p>
+
+
+                <p id="deliv-date">FREE delivery 25 Apr on first order or fastest delivery <b>Tomorrow, 24 Apr</b>
+                </p>
+
+                <div class="buttons">
+                    <button class="cart-button" onclick="
+                        countQuantity()
+                        ">Add to cart</button>
+
+                    <button class="del-button" onclick="
+                    resetQuantity()
+                    ">Delete</button>
+                   
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="cart-section">
+        <h2>🛒 Cart</h2>
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="cart-total">
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+        </div>
+        <span id="cart-count" class="cart-count hidden">0</span>
+    </div>
+    
+
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
